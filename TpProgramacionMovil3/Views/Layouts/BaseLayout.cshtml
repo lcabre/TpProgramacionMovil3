@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Empanadas Ya!</title>
+    @Styles.Render("~/css")
+    @RenderSection("custom_css", required: false)
+</head>
+<body>
+    @Html.Partial("NavBar")
+    <div class="container">
+        @RenderBody()
+    </div>
+    <footer>
+        @Html.Partial("Footer")
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("custom_scripts", required: false)
+</body>
+
+</html>
